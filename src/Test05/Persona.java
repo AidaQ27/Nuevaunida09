@@ -1,14 +1,14 @@
 package Test05;
 
-public class Persona {
+public abstract class Persona {
 
 	// Attributes
 
-	private String nombre;
-	private int edad;
-	private char sexo;
-	private boolean presentado;
-	private int probabilidadAbsencia;
+	protected String nombre;
+	protected int edad;
+	protected char sexo;
+	protected boolean presentado;
+	protected int probabilidadAbsencia;
 
 	// Constructor
 
@@ -16,7 +16,6 @@ public class Persona {
 		this.nombre = generarNombreApellido();
 		this.edad = edad;
 		this.sexo = generarSexo();
-		this.probabilidadAbsencia = 0;
 		this.presentado = presentarse();
 
 	}
@@ -64,7 +63,7 @@ public class Persona {
 	 * 
 	 * @param probabilidad - probabilidad de no presentarse
 	 */
-	private boolean presentarse() {
+	protected boolean presentarse() {
 		double num = Math.random() * 100;
 
 		// Se presenta si el numero aleatorio del 0 al 100
@@ -79,7 +78,7 @@ public class Persona {
 	 * 
 	 * @return
 	 */
-	private static String generarNombreApellido() {
+	protected static String generarNombreApellido() {
 		String[] nombres = { "Pepe", "Juan", "Maria", "Isabel", "Carlos", "David", "Cristina" };
 		String[] apellido = { "Sanchez", "Perez", "Gallego", "Marin", "Martinez", "Collado", "Marquez" };
 
@@ -93,12 +92,20 @@ public class Persona {
 	 * 
 	 * @return
 	 */
-	private char generarSexo() {
+	protected char generarSexo() {
 		if (Math.random() >= 0.5) {
 			return 'H';
 		} else {
 			return 'M';
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", presentado=" + presentado
+				+ ", probabilidadAbsencia=" + probabilidadAbsencia + "]";
+	}
+	
+	
 
 }
