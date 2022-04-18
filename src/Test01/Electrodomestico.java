@@ -21,7 +21,7 @@ public abstract class Electrodomestico {
 		blanco, negro, rojo, azul, gris
 		
 	}
-	// Atributo de electrodomestico
+	// Atributo de electrodomestico protected --> porque es el padre
 	protected double precio;
 	protected Color colorin;
 	protected Consumo letra;
@@ -90,6 +90,8 @@ public abstract class Electrodomestico {
 	}
 	//metodo sin definir --> los hijos lo desarrollaran por separado
 	public abstract double precioFinal();
+	
+	public abstract String identificar();
 		
 	
 	

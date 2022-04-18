@@ -51,7 +51,7 @@ public class Lavadora extends Electrodomestico { // Heredamos de la clase Electr
 		}
 		precio += sumaLetraConsumo(letra);
 		precio += sumaTamaño(carga);
-		System.out.println(precio);
+		//System.out.println(precio);
 		
 		return precio;
 	}
@@ -93,6 +93,10 @@ public class Lavadora extends Electrodomestico { // Heredamos de la clase Electr
 		}
 		return precio;
 		
+	}
+	
+	public String identificar() {
+		return "Lavadora";
 	}
 	
 }
