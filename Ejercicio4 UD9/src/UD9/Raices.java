@@ -6,6 +6,7 @@ public class Raices {
 	private double b;
 	private double c;
 	
+	//COnstructores
 	public Raices() {
 		this(0.0, 0.0, 0.0);
 	}
@@ -13,11 +14,12 @@ public class Raices {
 		this.a=a;
 		this.b=b;
 		this.c=c;
-	}			
+	}
+	//Método para el valor del discriminante
 	public double getDiscriminante() {
 		return ((Math.pow(this.b, 2)) - (4 * this.a * this.c));
 	}		
-		
+	//Muestra de soluciones en caso de tener dos raices	
 		private void obtenerRaices() {
 		
 		double X1=(-b+Math.sqrt(getDiscriminante()))/(2*a);
@@ -30,6 +32,7 @@ public class Raices {
 		
 		
 		}
+	// Muestra de la solucion en caso de tener una raiz
 	private void obtenerRaiz() {
 		double x = 0;
 		if (tieneRaiz()) {
@@ -37,14 +40,16 @@ public class Raices {
 			System.out.println("Solucion raiz:" + x);
 		}
 	}			
+	//Si el discriminante es mayor a cero tiene dos raices
 	private boolean tieneRaices() {
 		return getDiscriminante()>0;
 	}
+	//Si el discriminante es igual a cero tiene una sola raiz	
 	private boolean tieneRaiz() {
 		return getDiscriminante()==0;			
 	}
 	
-	
+	//Calculamos la ecuación de 2º grado
 	public void calcular() {
 		if (tieneRaices()) {
 			System.out.println("Dos posibles soluciones: ");
