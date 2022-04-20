@@ -1,4 +1,4 @@
-package Ejercicio2;
+package Test02;
 
 public class Serie implements Entregable{
 
