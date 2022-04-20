@@ -1,4 +1,4 @@
-package UD9;
+package Test04;
 
 public class Raices {
 
@@ -20,7 +20,7 @@ public class Raices {
 		return ((Math.pow(this.b, 2)) - (4 * this.a * this.c));
 	}		
 	//Muestra de soluciones en caso de tener dos raices	
-		private void obtenerRaices() {
+		public void obtenerRaices() {
 		
 		double X1=(-b+Math.sqrt(getDiscriminante()))/(2*a);
         double X2=(-b-Math.sqrt(getDiscriminante()))/(2*a);
@@ -33,7 +33,7 @@ public class Raices {
 		
 		}
 	// Muestra de la solucion en caso de tener una raiz
-	private void obtenerRaiz() {
+	public void obtenerRaiz() {
 		double x = 0;
 		if (tieneRaiz()) {
 			x = ((-this.b) + Math.sqrt(Math.pow(this.b,  2) - (4 * this.a * this.c))) / (2 * this.a);

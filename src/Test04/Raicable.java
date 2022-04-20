@@ -1,6 +1,6 @@
-package UD9;
+package Test04;
 
-public interface raicable {
+public interface Raicable {
 	
 	public double getDiscriminante() ;
 	

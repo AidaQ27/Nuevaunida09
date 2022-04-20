@@ -1,11 +1,11 @@
-package UD9;
+package Test04;
 
-public class MainApp {
+public class mainApp {
 
 	public static void main(String[] args) {
 		
 		//primera raiz
-		Raices raiz1=new Raices(5,-1,3);
+		Raices raiz1=new Raices(4,5,3);
 		System.out.println("Raiz 1");
 		raiz1.calcular();
 		raiz1.obtenerRaices();
