@@ -1,6 +1,10 @@
 package Test05;
 
 public abstract class Persona {
+	
+	// Constants
+	
+	private int PROBABILIDAD_ABSENCIA = 0;
 
 	// Attributes
 
@@ -16,6 +20,7 @@ public abstract class Persona {
 		this.nombre = generarNombreApellido();
 		this.edad = edad;
 		this.sexo = generarSexo();
+		this.probabilidadAbsencia = PROBABILIDAD_ABSENCIA;
 		this.presentado = presentarse();
 
 	}
