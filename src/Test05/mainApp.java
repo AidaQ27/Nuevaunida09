@@ -7,7 +7,6 @@ public class mainApp {
 		Aula aula = new Aula();
 		Profesor profesor = aula.getProfe();
 
-		System.out.println(aula);
 		System.out.println("Aula " + aula.getId());
 		System.out.print("Aula de " + aula.getMateria());
 		System.out.println(" para un total de " + aula.getNrMaxEstudiantes() + " estudiantes");
