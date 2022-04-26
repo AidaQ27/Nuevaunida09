@@ -8,7 +8,7 @@ public class ElectrodomesticoApp {
 		// CREA UN ARRAY DE 10 POSICIONES
 		Electrodomestico listaElectrodomestico[] = new Electrodomestico[10];
 		
-		// Asigvna a cada posicion un objeto de las clases anteriores con los valores que desees.
+		// Asigna a cada posicion un objeto de las clases anteriores con los valores que desees.
 		listaElectrodomestico[0] = new Lavadora(50, 25);
 		listaElectrodomestico[1] = new Lavadora(550, 12);
 		listaElectrodomestico[2] = new Lavadora (560, "rojo", 'A', 32.02, 22);
@@ -16,9 +16,9 @@ public class ElectrodomesticoApp {
 		listaElectrodomestico[4] = new Lavadora(540, 15);
 		listaElectrodomestico[5] = new Lavadora (580, "rojo", 'A', 16, 22);
 		listaElectrodomestico[6] = new Lavadora (695, "azul", 'B', 15, 12);
-		listaElectrodomestico[7] = new Television (235, "azul", 'B', 12);
+		listaElectrodomestico[7] = new Television (235, "azul", 'B', 12, 22, true);
 		listaElectrodomestico[8] = new Television(540, 15);
-		listaElectrodomestico[9] = new Television(580, "rojo", 'A', 16);
+		listaElectrodomestico[9] = new Television(580, "rojo", 'A', 16, 22, true);
 		
 		
 		// Recorre este array y jecuta el metodo precioFinal()

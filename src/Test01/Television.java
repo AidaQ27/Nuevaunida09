@@ -30,7 +30,7 @@ public class Television extends Electrodomestico{ // Heredamos de la clase Elect
 	}
 	
 	// Constructor con todos los atributos mas los heredados
-	public Television(double precio, String colorin, char letra, double peso) {
+	public Television(double precio, String colorin, char letra, double peso, int resolucion, boolean sintonizadorTDT) {
 		super(precio, colorin, letra, peso);
 		this.resolucion = resolucion;
 		this.sintonizadorTDT = sintonizadorTDT;
